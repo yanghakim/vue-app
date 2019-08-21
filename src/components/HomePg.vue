@@ -141,7 +141,7 @@ export default {
   &-extendBtn
     position: absolute
     bottom: 10%
-    left: 12vw
+    left: 10vw
 
     padding-left: 5px
 

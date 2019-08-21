@@ -83,6 +83,12 @@ export default {
 
     text-align: center
 
+    cursor: pointer
+    transition: 0.5s ease
+
+    &:hover
+      color: red
+
     @media (max-width: 700px)
       padding: 0
 
