@@ -141,18 +141,25 @@ export default {
   &-extendBtn
     position: absolute
     bottom: 10%
-    left: 10vw
+    left: 12vw
 
     padding-left: 5px
 
     cursor: pointer
     transition: 0.5s ease
 
+    @media (max-width: 700px)
+      bottom: 15%
+
     &.expand
-      border-left: 2px solid white
+      color: black
+      border: 1px solid black
+      padding: 5px 10px
+
+      border-radius: 20px
       &:hover
-        border-left: 2px solid red
         color: red
+        border: 1px solid red
 
     &.back
       color: white

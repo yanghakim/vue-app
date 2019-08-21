@@ -71,7 +71,7 @@ export default {
   @media (max-width: 1000px)
     grid-template-columns: repeat(2, 1fr)
 
-    margin-top: -30px
+    margin-top: -40px
 
   &__section
     padding: 20px 10px
