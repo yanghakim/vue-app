@@ -71,6 +71,8 @@ export default {
   @media (max-width: 1000px)
     grid-template-columns: repeat(2, 1fr)
 
+    margin-top: -30px
+
   &__section
     padding: 20px 10px
 
@@ -82,7 +84,7 @@ export default {
     text-align: center
 
     @media (max-width: 700px)
-      padding: 10px 0
+      padding: 0
 
     &-heading
       font-family: "Raleway", sans-serif
