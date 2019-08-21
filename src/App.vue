@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Roboto:300&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700|Roboto:100,300&display=swap')
 *
   padding: 0
   margin: 0
