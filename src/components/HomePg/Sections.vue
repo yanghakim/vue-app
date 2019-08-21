@@ -65,8 +65,6 @@ export default {
 
   color: white
 
-  padding: 1% 10%
-
   @media (max-width: 1500px)
     grid-template-columns: repeat(3, 1fr)
 

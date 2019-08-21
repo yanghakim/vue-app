@@ -22,7 +22,10 @@
         src="../assets/heart.jpg"
         v-bind:class="{ expand: !show, shrink: show }"
       />
-      <div class="homePg__graphic__testimonial">
+      <div
+        class="homePg__graphic__testimonial"
+        v-bind:class="{ show: show, hide: !show }"
+      >
         <p class="homePg__graphic__testimonial-quote">
           “Our department tripled our productivity and I am confident we are
           producing standards-compliant structured reports that are concise,
@@ -185,6 +188,15 @@ export default {
       display: flex
       flex-direction: column
       align-items: flex-end
+
+      @media (max-width: 1400px)
+        width: 40%
+
+      &.hide
+        display: none
+
+      &.show
+        display: flex
 
       &-quote
         color: white

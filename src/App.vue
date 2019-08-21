@@ -29,4 +29,7 @@ export default {
 
   @media (max-width: 1000px)
     font-size: 0.98em
+
+  @media (max-width: 600px)
+    font-size: 0.97em
 </style>

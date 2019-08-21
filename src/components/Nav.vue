@@ -33,10 +33,9 @@ export default {
 
 .nav
   position: absolute
-  right: 10%
+  right: 5%
   top: 40px
-
-  height: 40px
+  padding: 5px 15px
 
   display: flex
   flex-direction: row
@@ -44,10 +43,9 @@ export default {
 
   z-index: 2
 
-  @media (max-width: 1400px)
-    display: flex
-    flex-direction: column
-    align-items: flex-end
+  @media (max-width: 600px)
+    justify-content: center
+    right: auto
 
   &.white
     color: white
@@ -55,13 +53,26 @@ export default {
   &.black
     color: black
 
+  &-icon
+    font-size: 2em
+    cursor: pointer
+
+    transition: 0.5s ease
+    display: none
+
+    @media (max-width: 600px)
+      display: block
+
+    &:hover
+      color: red
+
   &-item
     margin: 0 20px
     cursor: pointer
     transition: 0.5s ease
 
-    @media (max-width: 1400px)
-      margin: 10px 0
+    @media (max-width: 600px)
+      margin: 0 5px
 
     &:hover
       color: red
