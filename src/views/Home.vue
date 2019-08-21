@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <Header />
-    <Nav />
-    <HomePg />
+    <Header v-bind:expanded="show" />
+    <Nav v-bind:expanded="show" />
+    <HomePg @expanded="onExpandToggle" />
   </div>
 </template>
 
@@ -17,6 +17,16 @@ export default {
     Nav,
     Header,
     HomePg
+  },
+  data() {
+    return {
+      show: null
+    };
+  },
+  methods: {
+    onExpandToggle(value) {
+      this.show = value;
+    }
   }
 };
 </script>

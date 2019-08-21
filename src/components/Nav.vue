@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <div class="nav" v-bind:style="{ color: activeColor }">
     <p class="nav-item homepg">
       Home
     </p>

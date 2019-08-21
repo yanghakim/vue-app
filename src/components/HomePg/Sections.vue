@@ -75,8 +75,10 @@ export default {
 
     display: flex
     flex-direction: column
+    align-items: center
+    justify-content: center
 
-    text-align: justify
+    text-align: center
 
     &-heading
       font-family: "Raleway", sans-serif
@@ -88,6 +90,8 @@ export default {
       width: 200px
       font-size: 0.9em
       font-weight: 300
+      letter-spacing: 1px
+      line-height: 1.5em
 
       margin-top: 10px
 </style>

@@ -50,6 +50,7 @@ export default {
       } else {
         this.navBtnText = "view more";
       }
+      this.$emit("expanded", this.show);
     }
   }
 };

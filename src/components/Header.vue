@@ -1,13 +1,16 @@
 <template>
   <div class="header">
     <img class="header-logo" src="../assets/logo.png" />
-    <p class="header-title">EncaptureMD</p>
+    <p class="header-title" v-bind:class="{ black: show, white: !show }">
+      EncaptureMD
+    </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  props: ["show"]
 };
 </script>
 
@@ -24,6 +27,14 @@ export default {
   display: flex
   flex-direction: row
   align-items: center
+
+  z-index: 5
+
+  &.white
+    color: white
+
+  &.black
+    color: black
 
   &-title
     font-size: 1.5em
