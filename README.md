@@ -13,7 +13,7 @@
   <a href="#you-may-also-like">Related</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/yanghakim/Portfolio/master/public/preview.png)
+![screenshot](https://raw.githubusercontent.com/yanghakim/vue-app/master/public/preview.png)
 
 ## Key Features
 
