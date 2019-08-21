@@ -22,6 +22,16 @@
         src="../assets/heart.jpg"
         v-bind:class="{ expand: !show, shrink: show }"
       />
+      <div class="homePg__graphic__testimonial">
+        <p class="homePg__graphic__testimonial-quote">
+          “Our department tripled our productivity and I am confident we are
+          producing standards-compliant structured reports that are concise,
+          accurate and immediately available to referring physicians.”
+        </p>
+        <p class="homePg__graphic__testimonial-btn">
+          Read Testimonials
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -152,8 +162,9 @@ export default {
         border: 1px solid red
 
   &__graphic
-    z-index: -2
+    z-index: -1
     height: 100%
+
     &-img
       position: fixed
       top: -10%
@@ -164,4 +175,34 @@ export default {
 
       &.shrink
         animation: shrinkRight 1s ease forwards
+
+    &__testimonial
+      position: absolute
+      width: 30%
+      right: 5%
+      bottom: 5%
+
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+      &-quote
+        color: white
+        padding: 10px
+        text-align: right
+
+        margin-top: 10px
+
+      &-btn
+        padding: 10px
+        background: none
+        color: white
+
+        margin-top: 10px
+
+        border: 1px solid white
+        border-radius: 20px
+
+        cursor: pointer
+        transition: 0.5s ease
 </style>
