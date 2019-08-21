@@ -24,6 +24,8 @@ export default {
 
   font-family: 'Roboto', sans-serif
 
+  overflow: hidden
+
   @media (max-width: 1500px)
     font-size: 0.99em
 
