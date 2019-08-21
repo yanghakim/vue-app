@@ -81,6 +81,9 @@ export default {
 
     text-align: center
 
+    @media (max-width: 700px)
+      padding: 10px 0
+
     &-heading
       font-family: "Raleway", sans-serif
       font-weight: 700
