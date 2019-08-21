@@ -1,7 +1,10 @@
 <template>
   <div class="header">
     <img class="header-logo" src="../assets/logo.png" />
-    <p class="header-title" v-bind:class="{ black: show, white: !show }">
+    <p
+      class="header-title"
+      v-bind:class="{ black: expanded, white: !expanded }"
+    >
       EncaptureMD
     </p>
   </div>
@@ -10,7 +13,7 @@
 <script>
 export default {
   name: "Header",
-  props: ["show"]
+  props: ["expanded"]
 };
 </script>
 
@@ -30,16 +33,16 @@ export default {
 
   z-index: 5
 
-  &.white
-    color: white
-
-  &.black
-    color: black
-
   &-title
     font-size: 1.5em
 
     font-family: 'Raleway', sans-serif
+
+    &.white
+      color: white
+
+    &.black
+      color: black
 
   &-logo
     width: 40px

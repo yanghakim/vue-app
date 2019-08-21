@@ -30,6 +30,9 @@ export default {
 
   background: white
 
+  @media (max-width: 1400px)
+    padding: 0 10vw
+
   &-header
     font-family: "Raleway", sans-serif
     font-weight: 200
@@ -37,6 +40,9 @@ export default {
     font-size: 3em
 
     width: 500px
+
+    @media (max-width: 1400px)
+      width: 300px
 
   &-subtitle
     margin: 15px 5px

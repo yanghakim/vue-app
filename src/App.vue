@@ -23,4 +23,10 @@ export default {
   box-sizing: border-box
 
   font-family: 'Roboto', sans-serif
+
+  @media (max-width: 1500px)
+    font-size: 0.99em
+
+  @media (max-width: 1000px)
+    font-size: 0.98em
 </style>

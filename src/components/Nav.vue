@@ -1,5 +1,5 @@
 <template>
-  <div class="nav" v-bind:style="{ color: activeColor }">
+  <div class="nav" v-bind:class="{ black: expanded, white: !expanded }">
     <p class="nav-item homepg">
       Home
     </p>
@@ -23,7 +23,8 @@
 
 <script>
 export default {
-  name: "Nav"
+  name: "Nav",
+  props: ["expanded"]
 };
 </script>
 
@@ -43,18 +44,30 @@ export default {
 
   z-index: 2
 
+  @media (max-width: 1400px)
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &.white
+    color: white
+
+  &.black
+    color: black
+
   &-item
     margin: 0 20px
     cursor: pointer
     transition: 0.5s ease
 
-    color: black
+    @media (max-width: 1400px)
+      margin: 10px 0
 
     &:hover
       color: red
 
     &.homepg
-      color: black
+      color: red
 
     &.loginpg
       border: 1px solid red

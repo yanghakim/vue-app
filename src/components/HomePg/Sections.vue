@@ -57,21 +57,24 @@ export default {
 
 <style lang="sass">
 .sections
-  display: flex
-  flex-direction: row
-  justify-content: center
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+  position: absolute
+  right: 0
+  left: 0
 
   color: white
-  border: 1px solid white
 
-  border-radius: 20px
+  padding: 1% 10%
 
-  margin: 0 10%
+  @media (max-width: 1500px)
+    grid-template-columns: repeat(3, 1fr)
 
-  position: absolute
+  @media (max-width: 1000px)
+    grid-template-columns: repeat(2, 1fr)
 
   &__section
-    padding: 20px
+    padding: 20px 10px
 
     display: flex
     flex-direction: column
@@ -84,7 +87,6 @@ export default {
       font-family: "Raleway", sans-serif
       font-weight: 700
       letter-spacing: 1px
-      text-align: left
 
     &-body
       width: 200px
